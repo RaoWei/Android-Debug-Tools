@@ -22,7 +22,7 @@ public class Resolve_domain_task extends Thread {
 					.getAllByName("aoi.androidesk.com");
 			buffer.append("\nName:  " + "aoi.androidesk.com");
 			for (int i = 0; i < addresses.length; i++) {
-				buffer.append("\nAddress  " + i + ":"
+				buffer.append("\nAddress" + i + ":  "
 						+ addresses[i].getHostAddress());
 			}
 
@@ -30,7 +30,7 @@ public class Resolve_domain_task extends Thread {
 			addresses = address.getAllByName("service.androidesk.com");
 			buffer.append("\nName:  " + "service.androidesk.com");
 			for (int i = 0; i < addresses.length; i++) {
-				buffer.append("\nAddress  " + i + ":"
+				buffer.append("\nAddress" + i + ":  "
 						+ addresses[i].getHostAddress());
 			}
 
@@ -38,7 +38,7 @@ public class Resolve_domain_task extends Thread {
 			addresses = address.getAllByName("s.androidesk.com");
 			buffer.append("\nName:  " + "s.androidesk.com");
 			for (int i = 0; i < addresses.length; i++) {
-				buffer.append("\nAddress  " + i + ":"
+				buffer.append("\nAddress" + i + ":  "
 						+ addresses[i].getHostAddress());
 			}
 
@@ -46,10 +46,10 @@ public class Resolve_domain_task extends Thread {
 			addresses = address.getAllByName("img0.androidesk.com");
 			buffer.append("\nName:  " + "img0.androidesk.com");
 			for (int i = 0; i < addresses.length; i++) {
-				buffer.append("\nAddress  " + i + ":"
+				buffer.append("\nAddress" + i + ":  "
 						+ addresses[i].getHostAddress());
 			}
-           buffer.append("域名解析结束****************************************");
+           buffer.append("\n域名解析结束****************************************");
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
