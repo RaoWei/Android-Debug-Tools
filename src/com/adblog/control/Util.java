@@ -18,7 +18,10 @@ public class Util {
 	 */
 	public static final String TAG="Androidesk";
 	public static final String PACKAGE="com.androidesk";
-	
+	public static final String server1="域名1";
+	public static final String server2="域名2";
+	public static final String server3="域名3";
+	public static final String server4="域名4";
 	
 	
 	

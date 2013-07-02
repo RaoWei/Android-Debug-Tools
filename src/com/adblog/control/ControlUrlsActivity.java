@@ -16,10 +16,10 @@ public class ControlUrlsActivity extends Activity {
 	private Button img0_cdn;
 	private String key = "";
 	private int flag = -1;
-	private final String aoi_url = "http://aoi.androidesk.com/";
-	private final String service_url = "http://service.androidesk.com/adbar/list";
-	private final String s_cdn_url = "http://s.androidesk.com/aoi/css/adesk.css?v=20130622";
-	private final String img0_cdn_url = "http://img0.androidesk.com/download/51ca6bf548d5b90cde937b20";
+	private final String aoi_url = "域名1";
+	private final String service_url = "域名2";
+	private final String s_cdn_url = "域名3";
+	private final String img0_cdn_url = "域名4";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +76,7 @@ public class ControlUrlsActivity extends Activity {
 				case 1:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "traceroute aoi.androidesk.com";
+					command = "traceroute " + Util.server1;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -85,7 +85,7 @@ public class ControlUrlsActivity extends Activity {
 				case 2:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "nslookup aoi.androidesk.com";
+					command = "nslookup " + Util.server1;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -93,7 +93,7 @@ public class ControlUrlsActivity extends Activity {
 				case 3:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "ping aoi.androidesk.com";
+					command = "ping " + Util.server1;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -114,7 +114,7 @@ public class ControlUrlsActivity extends Activity {
 				case 1:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "traceroute service.androidesk.com";
+					command = "traceroute " + Util.server2;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -122,7 +122,7 @@ public class ControlUrlsActivity extends Activity {
 				case 2:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "nslookup service.androidesk.com";
+					command = "nslookup " + Util.server2;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -130,7 +130,7 @@ public class ControlUrlsActivity extends Activity {
 				case 3:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "ping service.androidesk.com";
+					command = "ping " + Util.server2;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -151,7 +151,7 @@ public class ControlUrlsActivity extends Activity {
 				case 1:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "traceroute s.androidesk.com";
+					command = "traceroute " + Util.server3;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -159,7 +159,7 @@ public class ControlUrlsActivity extends Activity {
 				case 2:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "nslookup s.androidesk.com";
+					command = "nslookup " + Util.server3;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -167,7 +167,7 @@ public class ControlUrlsActivity extends Activity {
 				case 3:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "ping s.androidesk.com";
+					command = "ping " + Util.server3;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -188,7 +188,7 @@ public class ControlUrlsActivity extends Activity {
 				case 1:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "traceroute img0.androidesk.com";
+					command = "traceroute " + Util.server4;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -196,7 +196,7 @@ public class ControlUrlsActivity extends Activity {
 				case 2:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "nslookup img0.androidesk.com";
+					command = "nslookup " + Util.server4;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
@@ -204,7 +204,7 @@ public class ControlUrlsActivity extends Activity {
 				case 3:
 					intent = new Intent("jackpal.androidterm.RUN_SCRIPT");
 					intent.addCategory(Intent.CATEGORY_DEFAULT);
-					command = "ping img0.androidesk.com";
+					command = "ping " + Util.server4;
 					intent.putExtra("jackpal.androidterm.iInitialCommand",
 							command);
 					startActivity(intent);
